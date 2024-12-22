@@ -1,0 +1,88 @@
+.wrapper {
+    padding-top: 15vh;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: solid 2px silver;
+    margin-top: 20vh;
+    padding: 20px 20px;
+}
+
+.wrapper h1 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+    gap: 5%;
+    width: 100%;
+}
+
+.content p {
+    width: 70%;
+    border: solid 1px silver;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: inherit;
+    line-height: 200%;
+    font-size: 1.1em;
+    height: fit-content;
+}
+
+.content .more-info {
+    width: 30%;
+}
+
+.content .more-info img {
+    width: 100%;
+}
+
+.member-contact {
+    border: solid 1px silver;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.member-contact a {
+    box-sizing: content-box;
+    width: 35px;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:first-child svg {
+        fill: #128c7e;
+    }
+
+    &:last-child svg {
+        fill: #c13584;
+    }
+
+    &:first-child:hover {
+        background-color: #128c7e;
+
+        & svg {
+            fill: white;
+        }
+    }
+
+    &:last-child:hover {
+        background-color: #c13584;
+
+        & svg {
+            fill: white;
+        }
+    }
+}
+
+.member-contact a svg {
+    height: 100%;
+    width: 100%;
+}
